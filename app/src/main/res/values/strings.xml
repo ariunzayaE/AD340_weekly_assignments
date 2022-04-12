@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="name_and_date">Ariunzaya Erdenebileg 4/11/2022</string>
+</resources>
