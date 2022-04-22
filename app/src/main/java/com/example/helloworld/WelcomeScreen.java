@@ -23,8 +23,7 @@ public class WelcomeScreen extends AppCompatActivity {
 
         if(bundle != null){
             if(bundle.containsKey(Constants.USERNAME_KEY)){
-                // to do replace
-                welcomeText.setText(getString(R.string.thanks_text) + bundle.getString(Constants.USERNAME_KEY) + getString(R.string.exclam));
+                welcomeText.setText(getString(R.string.thanks_text) + "" + bundle.getString(Constants.USERNAME_KEY) + getString(R.string.exclam));
             }
         }
     }

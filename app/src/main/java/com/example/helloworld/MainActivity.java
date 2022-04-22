@@ -8,6 +8,9 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.provider.SyncStateContract;
+
 import android.util.Patterns;
 import android.view.View;
 import android.widget.DatePicker;
@@ -18,8 +21,10 @@ import android.widget.Toast;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements
+        DatePickerDialog.OnDateSetListener {
 
     private EditText nameField;
     private EditText emailAddressField;
@@ -45,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         String emailAddress = emailAddressField.getText().toString();
         String username = userNameField.getText().toString();
 
-        if(name.equals("") || emailAddress.equals("") || username.equals("")){
+        if(name.equals("") || emailAddress.equals("") || username.equals("") || dobYear == 0 || dobMonth == 0 || dobDay == 0){
             Toast.makeText(getApplicationContext(), getString(R.string.forgot_data_error), Toast.LENGTH_LONG).show();
             return;
         }
@@ -73,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         newFragment.show(getSupportFragmentManager(), "datePicker");
     }
 
-
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -100,8 +104,17 @@ public class MainActivity extends AppCompatActivity {
         dobMonth = 0;
     }
 
-    public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+        @Override
+        public void onDateSet(DatePicker view, int year, int month, int day) {
+            month = month + 1;
+            dobYear = year;
+            dobMonth = month;
+            dobDay = day;
+            dobTextView.setText(month + getString(R.string.slash) + day + getString(R.string.slash) + year);
+        }
 
+        public static class DatePickerFragment extends DialogFragment {
+        @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final Calendar c = Calendar.getInstance();
@@ -109,14 +122,7 @@ public class MainActivity extends AppCompatActivity {
             int month = c.get(Calendar.MONTH);
             int day = c.get(Calendar.DAY_OF_MONTH);
 
-            return new DatePickerDialog(getActivity(),this, year, month, day);
-        }
-        public void onDateSet(DatePicker view, int year, int month, int day) {
-            month = month + 1;
-            dobYear = year;
-            dobMonth = month;
-            dobDay = day;
-            dobTextView.setText(month + getString(R.string.slash) + day + getString(R.string.slash) + year);
+            return new DatePickerDialog(getActivity(),(MainActivity) getActivity(), year, month, day);
         }
     }
 }
