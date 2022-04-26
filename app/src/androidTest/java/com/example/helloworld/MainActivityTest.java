@@ -31,10 +31,8 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
 
-
     @Rule
     public ActivityScenarioRule<MainActivity> mainActivityRule = new ActivityScenarioRule<>(MainActivity.class);
-
 
     /* Week 1 assignment test
     @Test
