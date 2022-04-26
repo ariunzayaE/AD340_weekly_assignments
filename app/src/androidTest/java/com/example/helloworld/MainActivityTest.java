@@ -50,6 +50,7 @@ public class MainActivityTest {
         onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2000,1,2));
         onView(withId(android.R.id.button1)).perform(click());
         onView(withId(R.id.submitButton)).perform(click());
+
     }
 
     @Test
