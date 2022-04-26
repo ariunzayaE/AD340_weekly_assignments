@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="name_and_date">Ariunzaya Erdenebileg 4/19/2022</string>
+    <string name="Input_name">Please input your name</string>
+    <string name="email_address">Please input your email address</string>
+    <string name="please_input_your_username">Please input your username</string>
+    <string name="submit">submit</string>
+    <string name="email_address_error">You put wrong email address format</string>
+    <string name="forgot_data_error">You forgot to input some data on the form</string>
+    <string name="thanks_text">\"Thank you for signing up \"</string>
+    <string name="exclam">!</string>
+    <string name="eighteen_error">You are under eighteen years old.</string>
+    <string name="select_your_date_of_birth">Select your date of birth</string>
+    <string name="date">date</string>
+    <string name="back">Back</string>
+    <string name="slash">/</string>
+</resources>
