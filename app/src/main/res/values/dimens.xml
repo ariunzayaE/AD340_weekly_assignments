@@ -2,4 +2,11 @@
 <resources>
     <dimen name="image_width">200dp</dimen>
     <dimen name="image_height">200dp</dimen>
+    <dimen name="height_dimension">300dp</dimen>
+    <dimen name="layout_margin_twenty">20dp</dimen>
+    <dimen name="marginTop_twenty">20dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+    <dimen name="thirty_two">32dp</dimen>
 </resources>

@@ -15,4 +15,8 @@
     <string name="date">date</string>
     <string name="back">Back</string>
     <string name="slash">/</string>
+    <string name="zayas_dog">Zaya\'s Dog</string>
+    <string name="back_button">Back</string>
+    <string name="input_your_occupation">Input your occupation</string>
+    <string name="input_your_description">Input your description</string>
 </resources>
