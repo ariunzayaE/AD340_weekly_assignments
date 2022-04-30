@@ -1,2 +1,2 @@
-[![ariunzayae](https://circleci.com/gh/ariunzayae/AD340_weekly_assignments.svg?style=svg)](https://app.circleci.com/pipelines/github/ariunzayaE)
-[![codecov](https://codecov.io/gh/ariunzayae/AD340_weekly_assignments/branch/master/graph/badge.svg?token=P4ISDT3TRA)](https://codecov.io/gh/ariunzayae/AD340_weekly_assignments)
+[![ariunzayaE](https://circleci.com/gh/ariunzayaE/AD340_weekly_assignments.svg?style=svg)](https://app.circleci.com/pipelines/github/ariunzayaE)
+[![codecov](https://codecov.io/gh/ariunzayae/AD340_weekly_assignments/branch/master/graph/badge.svg?token=P4ISDT3TRA)](https://codecov.io/gh/ariunzayaE/AD340_weekly_assignments)
