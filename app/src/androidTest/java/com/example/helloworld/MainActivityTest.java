@@ -60,7 +60,7 @@ public class MainActivityTest {
         onView(withClassName(Matchers.equalTo(DatePicker.class.getName()))).perform(PickerActions.setDate(2000,1,2));
         onView(withId(android.R.id.button1)).perform(click());
         onView(withId(R.id.submitButton)).perform(click());
-        onView(withId(R.id.name)).check(matches(withText("Zaya Erdenebileg")));
+        onView(withId(R.id.nameField)).check(matches(withText("Zaya Erdenebileg")));
     }
 
     @Test
@@ -75,7 +75,6 @@ public class MainActivityTest {
                 .perform(PickerActions.setDate(2000, 4, 10));
         onView(withId(android.R.id.button1)).perform(click());
         onView(withId(R.id.submitButton)).perform(click());
-        onView(withId(R.id.backButton)).perform(click());
         onView(withId(R.id.nameField)).check(matches(withText("")));
         onView(withId(R.id.userName)).check(matches(withText("")));
         onView(withId(R.id.emailAddress)).check(matches(withText("")));
