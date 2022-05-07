@@ -9,4 +9,8 @@
     <dimen name="five">5dp</dimen>
     <dimen name="twenty_eight">28dp</dimen>
     <dimen name="thirty_two">32dp</dimen>
+    <dimen name="dimen_three">300dp</dimen>
+    <dimen name="text_size_thirty">30dp</dimen>
+    <dimen name="textSize_twentyfive">25sp</dimen>
+    <dimen name="textSize_thirtysp">30sp</dimen>
 </resources>

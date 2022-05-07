@@ -14,8 +14,8 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        TextView age = view.findViewById(R.id.selectedDateOfBirth);
-        TextView name = view.findViewById(R.id.nameField);
+        TextView age = view.findViewById(R.id.age);
+        TextView name = view.findViewById(R.id.name);
         TextView occupation = view.findViewById(R.id.occupation);
         TextView description = view.findViewById(R.id.description);
 
