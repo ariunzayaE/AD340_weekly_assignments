@@ -63,7 +63,6 @@ public class MainActivityTest {
         onView(withId(R.id.name)).check(matches(withText("Zaya Erdenebileg")));
     }
 
-
     @Test
     public void checkingBackButtonAndReset() {
         onView(withId(R.id.nameField)).perform(replaceText("zaya"));
