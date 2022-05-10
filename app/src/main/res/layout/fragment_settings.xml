@@ -6,8 +6,9 @@
     tools:context=".SettingsFragment">
 
     <TextView
+        android:id="@+id/settingsTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/fragment" />
+        android:text="@string/fragment_settings" />
 
 </FrameLayout>

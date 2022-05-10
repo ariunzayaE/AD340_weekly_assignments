@@ -19,8 +19,9 @@
     <string name="back_button">Back</string>
     <string name="input_your_occupation">Input your occupation</string>
     <string name="input_your_description">Input your description</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="fragment">fragment</string>
+    <string name="fragment_match">fragment match</string>
+    <string name="fragment_settings">fragment settings</string>
+    <string name="fragment_profile">fragment profile</string>
     <string name="profile">profile</string>
     <string name="matches">matches</string>
     <string name="settings">settings</string>
