@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="@dimen/elevation"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/matches_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/matches_image_height"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/image_of_the_match" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding_linear_layout">
+
+            <TextView
+                android:id="@+id/matches_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/melvin"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <TextView
+                android:id="@+id/matches_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Kind_boy"
+                android:textAppearance="?attr/textAppearanceBody2" />
+
+        <ImageButton
+            android:id="@+id/like_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/heart_default"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

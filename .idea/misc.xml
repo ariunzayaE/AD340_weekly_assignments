@@ -12,6 +12,8 @@
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/layout/fragment_settings2.xml" value="0.24114583333333334" />
+        <entry key="app/src/main/res/layout/matches_card.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/matches_view.xml" value="0.1015625" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/menu/drawer_view.xml" value="0.1" />
       </map>

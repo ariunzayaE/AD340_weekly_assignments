@@ -5,10 +5,19 @@
     android:layout_height="match_parent"
     tools:context=".MatchesFragment">
 
-    <TextView
-        android:id="@+id/matchesTextView"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/fragment_match" />
+        android:layout_marginTop="@dimen/scrollview_margin_top"
+        android:background="@color/white"
+        android:paddingStart="@dimen/grid_spacing"
+        android:paddingEnd="@dimen/grid_spacing">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>

@@ -30,4 +30,10 @@
     <string name="age">age</string>
     <string name="backButton">backButton</string>
     <string name="this_is_zaya_s_dog">This is Zaya\'s dog</string>
+
+    <string name="melvin">Melvin</string>
+    <string name="Kind_boy">Such a sweet boy</string>
+    <string name="image_of_the_match">Image of the match</string>
+    <string name="like">Like</string>
+    <string name="liked_message">You liked: %s</string>
 </resources>
