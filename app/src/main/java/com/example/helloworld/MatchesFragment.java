@@ -13,25 +13,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MatchesFragment extends Fragment {
+
+    private MatchesViewModel vm;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_matches, container, false);
 
-        List<Matches> matchesList = new ArrayList<>();
-        matchesList.add(new Matches("Melvin", "Such a sweet boy", true, "https://i.imgur.com/zYyha9n.jpg"));
-        matchesList.add(new Matches("August", "Super cowboy men", false, "https://i.imgur.com/WhT36QV.jpg"));
-        matchesList.add(new Matches("Jackson", "Best protective guy", false, "https://i.imgur.com/cUln8wC.jpg"));
+        final List<Matches> matchesList = new ArrayList<>();
+        vm = new MatchesViewModel();
 
         // Set up the RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
-        MatchesRecyclerViewAdapter adapter = new MatchesRecyclerViewAdapter(matchesList);
+        MatchesRecyclerViewAdapter adapter = new MatchesRecyclerViewAdapter(matchesList, (match) -> {
+            match.setLiked(!match.isLiked());
+            vm.updateMatch(match);
+        });
         recyclerView.setAdapter(adapter);
         int largePadding = getResources().getDimensionPixelSize(R.dimen.grid_spacing);
         int smallPadding = getResources().getDimensionPixelSize(R.dimen.small_grid_spacing);
         recyclerView.addItemDecoration(new MatchesItemDecoration(largePadding, smallPadding));
+
+        vm.getMatches(matches -> {
+            matchesList.clear();
+            matchesList.addAll(matches);
+            adapter.notifyDataSetChanged();
+        });
+
         return view;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        vm.clear();
     }
 }
