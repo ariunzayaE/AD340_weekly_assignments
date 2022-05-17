@@ -4,29 +4,21 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.junit.Assert.*;
 
-import static java.util.regex.Pattern.matches;
-
-import android.view.View;
 import android.widget.DatePicker;
 
-import androidx.test.espresso.DataInteraction;
-import androidx.test.espresso.ViewAction;
-import androidx.test.espresso.ViewAssertion;
 import androidx.test.espresso.contrib.PickerActions;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
 
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
@@ -46,7 +38,6 @@ public class MainActivityTest {
         onView(withId(android.R.id.button1)).perform(click());
         onView(withId(R.id.submitButton)).perform(click());
         //onView(withId(R.id.welcomeText)).check(matches(withText("Thank you for signing up zayaerde!")));
-
     }
 
     @Test
