@@ -78,11 +78,11 @@ public class MainActivityTest {
     public void checkingMustHaveValidEmail() {
         onView(withId(R.id.nameField)).perform(replaceText("zaya erdenebileg"));
         onView(withId(R.id.userName)).perform(replaceText("zayaUserName"));
-        onView(withId(R.id.occupation)).perform(replaceText("Student"));
         onView(withId(R.id.description)).perform(replaceText("I am a student"));
+        onView(withId(R.id.occupation)).perform(replaceText("Student"));
         onView(withId(R.id.dobButton)).perform(click());
         onView(withClassName(Matchers.equalTo(DatePicker.class.getName())))
-                .perform(PickerActions.setDate(2001, 4, 10));
+                .perform(PickerActions.setDate(1980, 12, 7));
         onView(withId(android.R.id.button1)).perform(click());
         onView(withId(R.id.submitButton)).perform(click());
         onView(withText("ariunzaya.eb@gmail.com")).check(doesNotExist());
