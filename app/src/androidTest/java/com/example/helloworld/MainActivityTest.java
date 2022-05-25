@@ -118,7 +118,7 @@ public class MainActivityTest {
 
     @Test
     public void checkingMustHaveDescription() {
-        onView(withId(R.id.nameField)).perform(replaceText("Zaya Erdenebileg"));
+        onView(withId(R.id.nameField)).perform(replaceText("Melvin"));
         onView(withId(R.id.emailAddress)).perform(replaceText("ariunzaya.eb@gmail.com"));
         onView(withId(R.id.userName)).perform(replaceText("zayaUserName"));
         onView(withId(R.id.occupation)).perform(replaceText("Student"));
@@ -146,7 +146,7 @@ public class MainActivityTest {
 
     @Test
     public void checkingOldEnoughTo18() {
-        onView(withId(R.id.nameField)).perform(replaceText("Zaya Erdenebileg"));
+        onView(withId(R.id.nameField)).perform(replaceText("Melvin"));
         onView(withId(R.id.emailAddress)).perform(replaceText("ariunzaya.eb@gmail.com"));
         onView(withId(R.id.userName)).perform(replaceText("zayaUserName"));
         onView(withId(R.id.description)).perform(replaceText("I am a student"));

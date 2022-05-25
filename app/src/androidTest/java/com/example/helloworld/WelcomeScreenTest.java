@@ -1,4 +1,5 @@
 package com.example.helloworld;
+
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -8,6 +9,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static com.example.helloworld.RecyclerViewMatcher.withRecyclerView;
+
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -25,7 +27,12 @@ public class WelcomeScreenTest {
     public void displaySettingsFragment() {
         onView(withContentDescription("drawer_open")).perform(click());
         onView(withId(R.id.settings_menu_item)).perform(click());
-        onView(withId(R.id.settingsTextView)).check(matches(withText("fragment settings")));
+        onView(withId(R.id.matches_reminder_time_label)).check(
+                matches(withText("Pick your daily reminder time")));
+        onView(withId(R.id.select_matches_time_button)).check(
+                matches(withText("Select time")));
+        onView(withId(R.id.gender_preference_label)).check(
+                matches(withText("Select your gender preference")));
     }
 
     @Test

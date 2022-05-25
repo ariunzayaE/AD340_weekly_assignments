@@ -36,4 +36,25 @@
     <string name="image_of_the_match">Image of the match</string>
     <string name="like">Like</string>
     <string name="liked_message">You liked: %s</string>
+
+    <string name="pick_your_daily_reminder_time">Pick your daily reminder time</string>
+    <string name="set_your_maximum_distance_search_in_miles">Set your maximum distance search (in miles)</string>
+    <string name="select_your_gender_preference">Select your gender preference</string>
+    <string name="select_your_privacy_option">Select your privacy option</string>
+    <string name="set_your_interested_age_range">Set your interested age range</string>
+    <string name="select_time">Select time</string>
+    <string name="selected_time">Selected time:</string>
+    <string name="type_your_distance_in_miles">Enter your distance in miles</string>
+    <string name="he_him">He/Him</string>
+    <string name="she_her">She/Her</string>
+    <string name="they_them">They/Them</string>
+    <string name="prefer_not_to_answer">Prefer not to answer</string>
+    <string name="private_radio">Private</string>
+    <string name="public_radio">Public</string>
+    <string name="selected_time_message">Selected time: %d:%s</string>
+    <string name="select_reminder_time_title">Select Reminder Time</string>
+    <string name="save">Save</string>
+    <string name="invalid_settings">You have inputted invalid settings</string>
+
+
 </resources>
