@@ -56,5 +56,11 @@
     <string name="save">Save</string>
     <string name="invalid_settings">You have inputted invalid settings</string>
 
+    <string name="started_location_updates">Started Location Updates</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="location_message">Please turn on your location services to use this feature</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="cancel">Cancel</string>
+
 
 </resources>
